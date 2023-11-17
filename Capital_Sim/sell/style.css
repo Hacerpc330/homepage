@@ -1,0 +1,247 @@
+
+
+.col-5 {
+    background-color: #ff0000;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    padding-right: 20px;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent), url('file:///C:/Users/user/Downloads/9e4ae833-3dd3-4742-b4bd-46f248595726.jpg');
+    background-size: 57% auto;
+    background-position: -100px center;
+    background-repeat: no-repeat;
+  }
+
+  .col-5::before {
+    content: "";
+    margin-left: 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 5%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 1) 95%);
+    z-index: -1;
+  }
+
+  .col-5 h3 {
+    top: 30px;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    text-align: right;
+    padding-left: 50%;
+    margin-bottom: 10%;
+  }
+
+  .col-5 h4 {
+    margin-top: 10px;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    position: absolute;
+    top: 75%;
+    right: 20%;
+    transform: translateY(-50%);
+    text-align: right;
+    padding-left: 50%;
+  }
+
+.carousel.slide{
+  min-height: auto;
+}
+
+.angry-grid {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  height: 100%;
+}
+  
+.angry-grid img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -10px;
+  
+}
+.square-image-container {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 100%; /* 1:1 Aspect Ratio */
+}
+  
+.square-image {
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+.square-image-container:hover{
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.custom-image {
+  margin-top: 10px;
+    height: 400px;
+    width: 150%;
+    object-fit: cover;
+}
+
+
+
+
+.col {
+  padding: 0; /* Remove any padding to make it full width */
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+}
+
+.img-fluid.custom-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.image-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(124, 124, 124, 0.314); /* Add a semi-transparent background */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Add padding to the text */
+  border-radius: 5px; /* Add rounded corners to the text box */
+}
+.image-text h1{
+  margin-top:10%;
+}
+
+.container-special{
+  padding: 2%;
+  width: 80%;
+  margin-left: 10%;
+  -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  margin-bottom: -60px;
+}
+
+.footer{
+  background-color: #333;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+
+/* Style for the footer */
+.footer {
+  background-color: #333; /* Change the background color */
+  color: #fff; /* Change the text color */
+  padding: 60px 0;
+}
+
+/* Style for the footer heading */
+.footer h2 {
+  color: #fff; /* Change the heading text color */
+  font-size: 24px; /* Adjust the font size */
+}
+
+/* Style for the footer social icons */
+.footer li {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s; /* Add a smooth transform transition on hover */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff; /* Change the icon color */
+  font-size: 20px; /* Adjust the icon size */
+}
+
+/* Hover style for social icons */
+.footer li:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+  transition: 0.5s;
+}
+
+/* Style for the links in the footer */
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+  transition: color 0.2s; /* Add a smooth color transition on hover */
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff; /* Change the link color */
+  font-size: 16px; /* Adjust the link font size */
+}
+
+/* Hover style for links in the footer */
+.links li:hover a {
+  color: #007BFF; /* Change the link color on hover */
+  transition: 0.5s;
+}
+
+/* Style for the location information */
+.location p {
+  font-size: 16px; /* Adjust the font size */
+}
+
+/* Style for the copyright text */
+.copyright small {
+  color: #fff; /* Change the text color */
+  font-size: 14px; /* Adjust the font size */
+}

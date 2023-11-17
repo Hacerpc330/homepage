@@ -1,0 +1,453 @@
+/* Reset some default styles for links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+/* Base structure */
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+}
+
+body {
+  color: #fff;
+  text-align: left;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 600px;
+  background-color: #333;
+}
+
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+/* Header */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255, 255, 255, .75);
+  border-bottom: 2px solid transparent;
+}
+
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+/* Cover */
+.cover {
+  padding: 0 20px;
+}
+
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.site-wrapper-inner{
+  background-color: #009ab5;
+}
+
+
+
+/* Affix and center */
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+}
+
+/* Section */
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+.gray-bg {
+  background-color: #ebf4fa;
+}
+
+/* Blog */
+.blog-grid {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.blog-grid .blog-img {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog-grid .blog-img .date {
+  position: absolute;
+  background: #3a3973;
+  color: #ffffff;
+  padding: 8px 15px;
+  left: 0;
+  top: 10px;
+  font-size: 14px;
+}
+
+.blog-grid .blog-info {
+  box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 20px;
+  margin: -30px 20px 0;
+  position: relative;
+}
+
+.blog-grid .blog-info h5 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+
+.blog-grid .blog-info h5 a {
+  color: #3a3973;
+}
+
+.blog-grid .blog-info p {
+  margin: 0;
+}
+
+.blog-grid .blog-info .btn-bar {
+  margin-top: 20px;
+}
+
+.section-title h2 {
+  color: #333;
+}
+
+.section-title p {
+  color: #333;
+}
+
+.px-btn-arrow {
+  padding: 0 50px 0 0;
+  line-height: 20px;
+  position: relative;
+  display: inline-block;
+  color: #fe4f6c;
+  -moz-transition: ease all 0.3s;
+  -o-transition: ease all 0.3s;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+}
+
+.px-btn-arrow .arrow {
+  width: 13px;
+  height: 2px;
+  background: currentColor;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 25px;
+  -moz-transition: ease right 0.3s;
+  -o-transition: ease right 0.3s;
+  -webkit-transition: ease right 0.3s;
+  transition: ease right 0.3s;
+}
+
+.px-btn-arrow .arrow:after {
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  content: "";
+  position: absolute;
+  top: -3px;
+  right: 0;
+  display: inline-block;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.col-md-6 .p-4 {
+  color: #333;
+}
+
+.square-photo {
+  width: 100%;
+  height: 300px; /* 4:3 aspect ratio (adjust as needed) */
+  position: relative;
+}
+
+.square-photo img {
+  position: absolute;
+  margin-left: -50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.col-md-6 {
+  align-items: center;
+}
+
+.p-4 {
+  text-align: left;
+}
+
+#fixing-equipment {
+  background-color: #f8f8f8;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.repair-services {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #333;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+}
+
+.collapsible {
+  background-color: rgb(0, 139, 178);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.collapsible:hover {
+  background-color: rgb(187, 187, 187);
+  color: #333;
+}
+
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.content p{
+  width: 100%;
+}
+
+.content .btn{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #009ab5;
+}
+
+.content .btn-lg{
+  width: 100%;
+}
+
+
+.col-md-6.offset-md-3.center-text img{
+  max-width: 100%; 
+  width: 500px; 
+}
+.footer{
+  background-color: #333;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+
+/* Style for the footer */
+.footer {
+  background-color: #333;
+  color: white;
+}
+
+/* Style for the footer heading */
+.footer h2 {
+  color: white;
+  font-size: 24px;
+}
+
+/* Style for the footer social icons */
+.footer li {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+/* Hover style for social icons */
+.footer li:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+/* Style for the links in the footer */
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+  transition: color 0.2s;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+/* Hover style for links in the footer */
+.links li:hover a {
+  color: #4180CB;
+  transition: 0.5s;
+}
+
+/* Style for the location information */
+.location p {
+  font-size: 16px;
+}
+
+/* Style for the copyright text */
+.copyright small {
+  color: white;
+  font-size: 14px;
+}
+
+
+

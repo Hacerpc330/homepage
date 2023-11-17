@@ -1,0 +1,183 @@
+.container-fluid{
+  position: relative;
+}
+
+.img-fluid {
+  max-height: 600px; /* Set the maximum height */
+  width: 100%; /* Maintain the original width */
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  object-position: right center;
+  overflow: hidden;
+  position: static;
+}
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 2%, rgba(255,255,255,0) 8%, rgba(255,255,255,0) 16%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 91%);
+}
+
+
+.col-md-6 .col-12 .card{
+  margin-left: 10%;
+  margin-top: 10%;
+}
+  .col-5 h3 {
+    font-size: 2em; /* Измените размер шрифта на 2 em */
+    
+  }
+
+  .card{
+    width: 25rem; 
+
+  }
+  @media (max-width: 760px) {
+      .col-md-6 {
+      max-width: 100%;
+      order: 2; /* Change the order to display the card below the image */
+      margin-top: 20px; /* Add some space between the image and card */
+      margin-left: 0px;
+      }
+      .gradient-overlay {
+        /* Remove the gradient overlay */
+        background: none;
+      }
+      .col-md-6 .col-12 .card {
+        margin-left: 0;
+        margin-top: 0; /* Убираем марджин у карточки на меньших экранах */
+        width: auto;
+      }
+  }
+
+
+.col-5::before {
+  content: "";
+  padding-left: -5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 5%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 1) 70%,
+    rgba(255, 255, 255, 1) 95%
+  );
+  z-index: -1;
+}
+
+.col-5 h3 {
+  top: 30px;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  position: absolute;
+  top: 50%;
+  right: 20%;
+  transform: translateY(-50%);
+  text-align: right;
+  padding-left: 50%;
+  margin-bottom: 10%;
+}
+
+.col-5 h4 {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  text-align: right;
+  position: absolute;
+  top: 75%;
+  right: 20%;
+  transform: translateY(-50%);
+  text-align: right;
+  padding-left: 50%;
+}
+
+
+
+
+.flex2,
+.flex3,
+.flex4 {
+  margin-top: 5%; /* Регулируйте значение, чтобы настроить отступы по вашему усмотрению */
+}
+
+.png{
+  margin-right: 2%;
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 0px 0;
+}
+
+
+/* Style for the footer heading */
+.footer h2 {
+  color: #fff; /* Change the heading text color */
+  font-size: 24px; /* Adjust the font size */
+}
+
+/* Style for the footer social icons */
+.footer li {
+  display: inline-block;
+  margin-right: 10px;
+  transition: transform 0.2s; /* Add a smooth transform transition on hover */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff; /* Change the icon color */
+  font-size: 20px; /* Adjust the icon size */
+}
+
+/* Hover style for social icons */
+.footer li:hover {
+  transform: scale(1.2); /* Increase the size on hover */
+}
+
+/* Style for the links in the footer */
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+  transition: color 0.2s; /* Add a smooth color transition on hover */
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff; /* Change the link color */
+  font-size: 16px; /* Adjust the link font size */
+}
+
+/* Hover style for links in the footer */
+.links li:hover a {
+  color: #007BFF; /* Change the link color on hover */
+}
+
+/* Style for the location information */
+.location p {
+  font-size: 16px; /* Adjust the font size */
+}
+
+/* Style for the copyright text */
+.copyright small {
+  color: #fff; /* Change the text color */
+  font-size: 14px; /* Adjust the font size */
+}
+
